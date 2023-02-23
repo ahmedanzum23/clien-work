@@ -1,0 +1,25 @@
+.spinner {
+  width: 9rem;
+  height: 9rem;
+  display: inline-block;
+  border: 5px solid black;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(180degree);
+    border-top-color: gray;
+    border-bottom-color: grey;
+    border-right-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    transform: rotate(360degree);
+  }
+}
